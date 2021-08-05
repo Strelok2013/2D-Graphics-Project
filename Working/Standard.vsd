@@ -1,0 +1,25 @@
+#version 450
+
+layout (location = 0) in vec2 Position;
+layout (location = 1) in vec3 inColor;
+layout (location = 2) in vec2 TextureCoords;
+
+out vec3 Color;
+out vec2 TexCoord;
+out vec3 Fragpos;
+
+
+uniform mat4 WorldTransform;
+	
+
+void main()
+{
+	
+	Fragpos = vec3(WorldTransform * vec4(Position, 0, 1.0));
+	// Fragpos is created here???
+
+	//gl_Position = vec4(Position, 0, 1.0f);
+	gl_Position = WorldTransform * vec4(Position, 0, 1.0f);
+	Color = inColor;
+	TexCoord = TextureCoords;
+}

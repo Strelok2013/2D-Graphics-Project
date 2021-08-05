@@ -1,0 +1,22 @@
+#version 450
+
+out vec4 FragColor;
+
+
+in vec2 UVs;
+
+uniform sampler2D occlusionTexture;
+
+void main()
+{
+	vec4 blockTexture = texture(occlusionTexture, vec2(UVs.x, 1 - UVs.y));
+	
+	if(blockTexture.a == 0)
+	{
+		discard;
+	}
+	
+	blockTexture *= 0;
+	
+	FragColor = blockTexture;
+}

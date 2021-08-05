@@ -1,0 +1,32 @@
+#version 450
+
+out vec4 FragColor;
+
+
+in vec2 UVs;
+
+uniform sampler2D lightTexture;
+
+void main ()
+{
+	vec4 grayConversion = vec4(0.3, 0.59, 0.11,0);
+
+	//vec4 diffuseTexture  = texture(lightTexture, vec2(UVs.x, 1 - UVs.y)); // Probably not needed for this?
+	vec4 diffuseTexture = texture(lightTexture, vec2(UVs.x, UVs.y));
+	
+	if(diffuseTexture.a == 0)
+	{
+		discard;
+	}
+	
+	float grayScaleIntensity = dot(diffuseTexture, grayConversion);
+	//float grayScaleIntensity = 0.21 * diffuseTexture.r + 0.71 * diffuseTexture.g + 0.07 * diffuseTexture.b; 
+	
+	vec4 grayScaleTexture = vec4(grayScaleIntensity, grayScaleIntensity, grayScaleIntensity, 1);
+	//grayScaleTexture.z += 11;
+	//vec4 grayScaleTexture = vec4(diffuseTexture.r * grayScaleIntensity, diffuseTexture.g * grayScaleIntensity, diffuseTexture.b * grayScaleIntensity, 0 );
+	//FragColor = vec4(1,1,1,1);
+	//FragColor = diffuseTexture;
+	//FragColor = vec4(1,1,1,1);
+	FragColor = grayScaleTexture;
+}
