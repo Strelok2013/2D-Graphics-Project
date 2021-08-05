@@ -5,6 +5,7 @@
 # Additional ignore directories
 /GLFW
 /glm
+/ScreenGrabs
 
 
 ### C++ ###
