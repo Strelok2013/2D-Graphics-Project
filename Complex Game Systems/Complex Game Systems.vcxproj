@@ -58,6 +58,7 @@
     <ProjectGuid>{6FC88F92-48CB-4A0A-9FE6-186B50D6BE08}</ProjectGuid>
     <RootNamespace>ComplexGameSystems</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>2D Graphics Project</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -15,6 +15,10 @@ void main()
 	{
 		discard;
 	}
+	if(blockTexture.r > 0.95f && blockTexture.g > 0.95f &&blockTexture.b > 0.95f)
+	{
+		discard;
+	}
 	
 	blockTexture *= 0;
 	

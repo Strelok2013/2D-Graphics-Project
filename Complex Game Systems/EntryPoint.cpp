@@ -19,7 +19,7 @@ int main(void)
 		return -1;
 	}
 
-	window = glfwCreateWindow(1280, 720, "100% Original, again", nullptr, nullptr);
+	window = glfwCreateWindow(1280, 720, "2D Graphics Project", nullptr, nullptr);
 
 	if (!window)
 	{
