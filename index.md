@@ -8,7 +8,7 @@ I have a little 2D graphics project that I am not working on much, yet.
 
 The following is the current state of my 2D graphics project.
 
-![vladsimage](/SiteImages/img1.png)
+![vladsimage](/SiteImages/img1.PNG)
 
 My goal is to have a solid 2D graphics system, from which I will then move onto 3D.
 And after that I'll move onto physics, then gameplay, then... well basically have a fully fledged game engine more or less.
