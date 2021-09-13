@@ -15,3 +15,8 @@ And after that I'll move onto physics, then gameplay, then... well basically hav
 This is mainly to develop my skills across the board in game development on the programming side, maybe after that I could take up art.
 
 I program mainly in C++ but currently I'm using C# for my school project that I am doing at AIE.
+
+
+
+
+You can email me at vgozhyi@gmail.com if you're interested in my project.
