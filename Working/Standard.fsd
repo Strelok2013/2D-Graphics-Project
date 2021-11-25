@@ -51,11 +51,10 @@ void main()
 		spec = 0;
 	}
 	
-	if(diffuseTexture.a < 1)
+	if(diffuseTexture.a < 0.5f)
 	{
 		discard;
 	}
-	
 	
 	
 	//vec3 specularResult = specularStrength * spec * lightColor; // First specular lighting
@@ -75,6 +74,8 @@ void main()
 	//FragColor = vec4(rotatedNormal);
 	//FragColor = normalTexture;
     FragColor = diffuseTexture * pixelBrightness + vec4(specularResult, 1);
+	//FragColor = diffuseTexture;
+	//FragColor = vec4(diffuseTexture.a, diffuseTexture.a, diffuseTexture.a, 1);
 	//FragColor = vec4(spec, spec, spec, 1);
 	//FragColor = vec4(lightDirection.xyz, 1);
 	//FragColor = mixedTexture * vec4(lightColor,1);

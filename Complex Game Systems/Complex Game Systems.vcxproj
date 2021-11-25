@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Chunk.cpp" />
     <ClCompile Include="PlayerControl.cpp" />
     <ClCompile Include="EntryPoint.cpp" />
     <ClCompile Include="Framebuffer.cpp" />
@@ -38,6 +39,7 @@
     <ClInclude Include="Framebuffer.h" />
     <ClInclude Include="glad.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Chunk.h" />
     <ClInclude Include="khrplatform.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="Math.h" />

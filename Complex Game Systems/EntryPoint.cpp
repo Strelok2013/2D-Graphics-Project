@@ -51,6 +51,8 @@ int main(void)
 
 	glm::vec2 offset1 = { 1.1f, 0.38f };
 	glm::vec2 offset2 = { 0.1f, 0.1f };
+	glm::vec2 offset3 = { 0.1, 0.5f };
+	glm::vec2 offset4 = { 0.3, 0.5f };
 
 
 	//SpriteMesh defaultMesh;
@@ -77,6 +79,9 @@ int main(void)
 	//demos[1] = demos[2]; 
 
 	world.LoadDNSTexture("ExampleHead", "ExampleHead_Diffuse.png", "ExampleHead_Normal.png", "ExampleHead_Specular.png");
+	//world.LoadDiffuseTexture("Smiley", "SmileyTest.png");
+	//world.LoadDiffuseTexture("Grass", "GrassV1.png");
+	world.LoadDiffuseTexture("Dirt", "Dirt.png");
 	world.LoadDiffuseTexture("LightMap", "Light.png");
 	world.LoadDiffuseTexture("OcclusionMap", "stonewall2_Diffuse.png");
 
@@ -103,10 +108,18 @@ int main(void)
 	world.CreateSprite("LightSprite", "LightMap");
 
 	world.CreateSprite("OcclusionSprite", "OcclusionMap");
+	
+	//world.CreateSprite("SmileySprite", "Smiley");
+
+	world.CreateSprite("DirtSprite", "Dirt");
+
+	//world.CreateSprite("GrassSprite", "Grass");
 
 	world.ToggleLightMap("LightSprite");
+	//world.ToggleLightMap("DirtSprite");
 
 	world.ToggleOcclusionMap("OcclusionSprite");
+	//world.ToggleOcclusionMap("DirtSprite");
 
 	world.SetLightDirection({ 1, 1 });
 
@@ -221,6 +234,9 @@ int main(void)
 		world.SetSpriteOffset(offset1, "LightSprite");
 
 		world.SetSpriteOffset(offset2, "OcclusionSprite");
+		//world.SetSpriteOffset(offset3, "SmileySprite");
+		world.SetSpriteOffset(offset4, "DirtSprite");
+		//world.SetSpriteOffset(offset3, "GrassSprite");
 
 		world.Update();
 		world.Render();
