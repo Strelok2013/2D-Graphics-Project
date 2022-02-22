@@ -4,22 +4,25 @@ This page is currently under construction while I figure out how exactly github 
 
 I have recently completed my second year of games programming at AIE.
 
-I have a little 2D graphics project that I am currently working on!
+I have a little 2D graphics project that I've been working on.
+The development of this project is postponed for now while I do an in-depth
+study of C++.
 
 The following is the current state of my 2D graphics project.
 
 ![vladsimage](/SiteImages/anim1.gif)
 
-As of 01/12/2021 I am trying to implement a "Chunk" rendering system also known as sprite batching. 
-Essentially I would like to be able to render several sprites all neatly arranged into a block.
+As of 23/02/2022 I am doing an in depth-study on C++ so I can have an easier time developing my graphics project.
+(that and so I can understand why certain things aren't working).
 
-My current roadmap of features for the 2D graphics project is:
+The goals I'd like to reach in the 2D graphics project are:
 Sprite Batching
 Animated Sprites
 
 Sprite sorting (so that certain sprites render over the top of others)
 Improve lighting (Occlusion and lightmaps)
 
+This is all after I've figured out how C++ works and how to use it properly.
 
 
 I program mainly in C++ but I can also use C#, specifically the Unity scripting portion which I used to help create a game for an assignment. 
